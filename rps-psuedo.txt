@@ -1,11 +1,6 @@
 Instructions
 
-
-
-
 Create a game that suits this user story:
-
-
 
 	Only two users can play at the same time.
 
@@ -19,31 +14,53 @@ Create a game that suits this user story:
 	
 Deploy your assignment to Github Pages.
 
+enter name player one
+store name
+display name
+enter name player two
+store name 
+display name
+display "waiting for player to join"
+ensure 2 players (only)
+keep track of whose turn it is
+1st player clicks a rock, paper or scissors
+Store choice
+display choice
+2nd player clicks rock, paper, scissors 
+Store choice
+display choice
+See who wins (logic below)
+increment appropriate total
+Display results
+Save results
+Update database
+handle somebody leaving
+	remove player	
+	reset scores
+	wait
+handle new player
+	get name
+	start over
+Timer in case player takes too long?
+enable chat (smack talk)
+
+
+
 
 var playerOne;
 var playerTwo;
 var pOnePlay;
 var pTwoPlay;
 
-// This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
+// This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number, from the first RPS game
       
 if ((pOnePlay === "r") || (pOnePlay === "p") || (pOnePlay === "s")) {
-
-        
-	if ((pOnePlay === "r" && pTwoPlay === "s") ||
-          
-	(pOnePlay === "s" && pTwoPlay === "p") || 
-          
-	(pOnePlay === "p" && pTwoPlay === "r")) {
-          
-	wins++;
-
+    if ((pOnePlay === "r" && pTwoPlay === "s") ||
+    (pOnePlay === "s" && pTwoPlay === "p") || 
+    (pOnePlay === "p" && pTwoPlay === "r")) {
+    wins++;
         } else if (pOnePlay === computerGuess) {
- 
          ties++;
- 
         } else {
-
         losses++;
- 
        }
