@@ -30,12 +30,24 @@
     <!-- TOP SECTION -->
     <div class="row text-center">
       <div class="col-md-12">
-        <div class="card bg-white text-black" style="width: 40%;">
+        <div class="card bg-white text-black">
           <img class="card-img" src="assets/images/RPS_image.png" alt="rock paper scissors image">
-          <div class="card-img-overlay"></div>
         </div>
       </div> <!-- end column -->
     </div> <!-- end row -->
+    <div class="row text-center"> <!-- row 2 -->
+	<div class="col-md-12">
+	   <div class="card">
+  		<div class="card-body">
+    		 <form id="logIn"> <!-- enter player names -->
+                	<label for="enter-name">Please enter your Player Name</label>
+               		<input type="text" id="player-name">             
+               		<input id="add-name" type="submit" value="Submit"> <!-- Button triggers player to be added and tracked -->
+                </form>
+  	   	</div><!--end card-body-->
+	   </div> <!-- end card -->
+	</div> <!--end col -->
+    </div> <!-- end row 2 -->
     <!-- END TOP SECTION -->
 
     <!-- MIDDLE SECTION MAIN GAME PLAY -->
@@ -43,21 +55,21 @@
       <div class="card"> <!-- left side -->
         <div class="card-body">
           <h5 class="card-title" id="name-one">Name of Player One</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">ROCK<br>PAPER<br>SCISSORS</p>
           <p class="card-text"><small class="text-muted">Win:&nbsp;&nbsp;&nbsp;  Lose:&nbsp;&nbsp;&nbsp;  Draw:&nbsp;&nbsp;&nbsp; </small></p>
         </div>
       </div>
       <div class="card"> <!-- middle -->
         <div class="card-body">
           <h5 class="card-title" id="game-action">Action Here</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Waiting for 'Player Name' to choose</small></p>
+          <p class="card-text">Things like:</p>
+          <p class="card-text"><small class="text-muted">Waiting for 'Player Name' to choose, <br>'Player Name' Wins!</small></p>
         </div>
       </div>
       <div class="card"> <!-- right side -->
         <div class="card-body">
           <h5 class="card-title" id="name-two">Name of Player Two</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text">ROCK<br>PAPER<br>SCISSORS</p>
           <p class="card-text"><small class="text-muted">Win:&nbsp;&nbsp;&nbsp;  Lose:&nbsp;&nbsp;&nbsp;  Draw:&nbsp;&nbsp;&nbsp;</small></p>
         </div>
       </div>
@@ -66,6 +78,7 @@
 
     <!-- BOTTOM SECTION-->
     <h2>Talk Some Smack</h2>
+    <h3>Chat area will go here (God willing)</h3>
     <!-- END BOTTOM SECTION-->
 
   </div> <!--end container-->

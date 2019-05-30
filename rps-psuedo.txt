@@ -1,6 +1,11 @@
 Instructions
 
+
+
+
 Create a game that suits this user story:
+
+
 
 	Only two users can play at the same time.
 
@@ -13,37 +18,19 @@ Create a game that suits this user story:
 	Styling and theme are completely up to you. Get Creative!
 	
 Deploy your assignment to Github Pages.
-
-enter name player one
-store name
-display name
-enter name player two
-store name 
-display name
-display "waiting for player to join"
-ensure 2 players (only)
-keep track of whose turn it is
-1st player clicks a rock, paper or scissors
-Store choice
-display choice
-2nd player clicks rock, paper, scissors 
-Store choice
-display choice
-See who wins (logic below)
-increment appropriate total
-Display results
-Save results
-Update database
-handle somebody leaving
-	remove player	
-	reset scores
-	wait
-handle new player
-	get name
-	start over
-Timer in case player takes too long?
-enable chat (smack talk)
-
+==================================================================================
+1. set up repo DONE
+2. create new firebase project DONE
+3. create new firebase database DONE
+4. add required firebase code to file  DONE
+5. determine page layout  DONE
+6. code page layout DONE
+7. get or make images  DONE
+8. draw and list on paper
+9. flow/logic
+10. variables
+11. functions
+12 what does firebase have that i can use?
 
 
 
@@ -52,15 +39,25 @@ var playerTwo;
 var pOnePlay;
 var pTwoPlay;
 
-// This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number, from the first RPS game
+// This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
       
 if ((pOnePlay === "r") || (pOnePlay === "p") || (pOnePlay === "s")) {
-    if ((pOnePlay === "r" && pTwoPlay === "s") ||
-    (pOnePlay === "s" && pTwoPlay === "p") || 
-    (pOnePlay === "p" && pTwoPlay === "r")) {
-    wins++;
+
+        
+	if ((pOnePlay === "r" && pTwoPlay === "s") ||
+          
+	(pOnePlay === "s" && pTwoPlay === "p") || 
+          
+	(pOnePlay === "p" && pTwoPlay === "r")) {
+          
+	wins++;
+
         } else if (pOnePlay === computerGuess) {
+ 
          ties++;
+ 
         } else {
+
         losses++;
+ 
        }
